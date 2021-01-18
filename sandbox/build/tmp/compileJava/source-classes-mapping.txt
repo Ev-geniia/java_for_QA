@@ -1,6 +1,14 @@
+drafts/CopyPoint.java
+ drafts.CopyPoint
 ru/stqa/pft/sandbox/MyFirstProgram.java
  ru.stqa.pft.sandbox.MyFirstProgram
-ru/stqa/pft/sandbox/Square.java
- ru.stqa.pft.sandbox.Square
 ru/stqa/pft/sandbox/Rectangle.java
  ru.stqa.pft.sandbox.Rectangle
+ru/stqa/pft/sandbox/Square.java
+ ru.stqa.pft.sandbox.Square
+drafts/CopyTask2.java
+ drafts.CopyTask2
+lesson1/task2/Point.java
+ lesson1.task2.Point
+lesson1/task2/Task2.java
+ lesson1.task2.Task2

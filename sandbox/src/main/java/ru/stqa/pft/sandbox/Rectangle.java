@@ -8,4 +8,8 @@ public class Rectangle {
     this.l = l;
     this.w = w;
   }
+
+  public double area() {
+    return this.l * this.w;
+  }
 }
