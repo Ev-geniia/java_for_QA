@@ -27,14 +27,19 @@ public class ContactHelper extends BaseHelper {
   }
 
   public void selectContact() {
-    click(By.id("3"));
+    click(By.xpath("//img[@alt='Details']"));
   }
 
   public void initContactModification() {
-    click(By.xpath("//img[@alt='Edit']"));
+    click(By.name("modifiy"));
   }
 
   public void submitContactModification() {
     click(By.name("update"));
   }
+
+  public void initContactDeletion() {
+    click(By.xpath("//input[@value='Delete']"));
+  }
+
 }
