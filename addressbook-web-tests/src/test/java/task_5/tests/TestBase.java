@@ -1,6 +1,6 @@
-package copyForLesson2_5.tests;
+package task_5.tests;
 
-import copyForLesson2_5.appmanager.ApplicationManager;
+import task_5.appmanager.ApplicationManager;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 

@@ -1,4 +1,4 @@
-package copyForLesson2_5.model;
+package task_5.model;
 
 public class GroupData {
   private final String name;

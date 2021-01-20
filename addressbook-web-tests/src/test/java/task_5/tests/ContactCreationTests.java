@@ -1,6 +1,6 @@
-package copyForLesson2_5.tests;
+package task_5.tests;
 
-import copyForLesson2_5.model.ContactData;
+import task_5.model.ContactData;
 import org.testng.annotations.Test;
 
 public class ContactCreationTests extends TestBase {

@@ -1,4 +1,4 @@
-package copyForLesson2_5.model;
+package task_5.model;
 
 public class ContactData {
   private final String firstname;

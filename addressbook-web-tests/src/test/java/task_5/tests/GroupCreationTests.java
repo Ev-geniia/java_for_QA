@@ -1,6 +1,6 @@
-package copyForLesson2_5.tests;
+package task_5.tests;
 
-import copyForLesson2_5.model.GroupData;
+import task_5.model.GroupData;
 import org.testng.annotations.Test;
 
 public class GroupCreationTests extends TestBase {

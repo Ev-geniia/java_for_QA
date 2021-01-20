@@ -1,4 +1,4 @@
-package copyForLesson2_5.tests;
+package task_5.tests;
 
 import org.testng.annotations.Test;
 
