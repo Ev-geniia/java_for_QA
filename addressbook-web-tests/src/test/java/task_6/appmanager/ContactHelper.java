@@ -42,4 +42,11 @@ public class ContactHelper extends BaseHelper {
     click(By.xpath("//input[@value='Delete']"));
   }
 
+  public void selectContactHomePage() {
+    click(By.xpath("//td/input"));
+  }
+
+  public void confirmContactDeletion() {
+    wd.switchTo().alert().accept();
+  }
 }
