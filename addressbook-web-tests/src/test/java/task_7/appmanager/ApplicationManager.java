@@ -32,9 +32,6 @@ public class ApplicationManager {
     } else if (browser.equals(BrowserType.FIREFOX)) {
       wd = new FirefoxDriver();
       System.setProperty("webdriver.gecko.driver", "C:\\geckodriver.exe");
-    } else if (browser.equals(BrowserType.IE)) {
-      wd = new InternetExplorerDriver();
-      System.setProperty("webdriver.ie.driver", "C:\\IEDriverServer.exe");
     }
 
     wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
