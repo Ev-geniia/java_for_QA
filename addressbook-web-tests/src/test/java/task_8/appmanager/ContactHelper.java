@@ -13,8 +13,13 @@ public class ContactHelper extends BaseHelper {
     super(wd);
   }
 
-  public void returnToHomePage() {
-    click(By.linkText("home"));
+  public void gotoAddNewContactPage() {
+    if (isElementPresent(By.tagName("h1"))
+            && wd.findElement(By.tagName("h1")).getText().equals("Edit / add address book entry")
+            && isElementPresent(By.name("submit"))) {
+      return;
+    }
+    click(By.linkText("add new"));
   }
 
   public void submitContactCreation() {
@@ -47,6 +52,10 @@ public class ContactHelper extends BaseHelper {
     click(By.name("update"));
   }
 
+  public void returnToHomePage() {
+    click(By.linkText("home"));
+  }
+
   public void initContactDeletion() {
     click(By.xpath("//input[@value='Delete']"));
   }
@@ -57,5 +66,17 @@ public class ContactHelper extends BaseHelper {
 
   public void confirmContactDeletion() {
     wd.switchTo().alert().accept();
+  }
+
+  public void createContact(ContactData contact) {
+    gotoAddNewContactPage();
+    fillContactForm(new ContactData("firstname", "lastname", "address", "2128506", "mail@mail.com", "test1"), true);
+    submitContactCreation();
+    returnToHomePage();
+
+  }
+
+  public boolean isThereAContact() {
+    return isElementPresent(By.xpath("//td/input"));
   }
 }
