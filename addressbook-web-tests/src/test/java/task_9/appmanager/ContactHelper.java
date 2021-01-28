@@ -39,8 +39,9 @@ public class ContactHelper extends BaseHelper {
     }
   }
 
-  public void selectContact() {
-    click(By.xpath("//img[@alt='Details']"));
+  public void selectContact(int index) {
+    wd.findElements(By.xpath("//img[@alt='Details']")).get(index).click();
+    //click(By.xpath("//img[@alt='Details']"));
   }
 
   public void initContactModification() {
@@ -59,8 +60,9 @@ public class ContactHelper extends BaseHelper {
     click(By.xpath("//input[@value='Delete']"));
   }
 
-  public void selectContactHomePage() {
-    click(By.xpath("//td/input"));
+  public void selectContactHomePage(int index) {
+    wd.findElements(By.xpath("//td/input")).get(index).click();
+    //click(By.xpath("//td/input"));
   }
 
   public void confirmContactDeletion() {
