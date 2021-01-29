@@ -2,9 +2,13 @@ package task_9.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import task_9.model.ContactData;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ContactHelper extends BaseHelper {
 
@@ -41,7 +45,7 @@ public class ContactHelper extends BaseHelper {
 
   public void selectContact(int index) {
     wd.findElements(By.xpath("//img[@alt='Details']")).get(index).click();
-    //click(By.xpath("//img[@alt='Details']"));
+
   }
 
   public void initContactModification() {
@@ -62,7 +66,7 @@ public class ContactHelper extends BaseHelper {
 
   public void selectContactHomePage(int index) {
     wd.findElements(By.xpath("//td/input")).get(index).click();
-    //click(By.xpath("//td/input"));
+
   }
 
   public void confirmContactDeletion() {
@@ -84,4 +88,16 @@ public class ContactHelper extends BaseHelper {
   public int getContactCount() {
     return wd.findElements(By.name("selected[]")).size();
   }
+
+  public List<ContactData> getContactList() {
+    List<ContactData> contacts = new ArrayList<ContactData>();
+    List<WebElement> elements = wd.findElements(By.name("selected[]"));
+    for(WebElement element : elements) {
+      String firstname = element.getText();
+      ContactData contact = new ContactData(firstname, null, null, null, null, null);
+      contacts.add(contact);
+    }
+    return contacts;
+  }
+
 }
