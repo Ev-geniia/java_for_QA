@@ -75,10 +75,18 @@ public class ContactHelper extends BaseHelper {
 
   public void createContact(ContactData contact) {
     gotoAddNewContactPage();
-    fillContactForm(new ContactData("firstname", "lastname", "address", "2128506", "mail@mail.com", "test1"), true);
+    fillContactForm((contact), true);
     submitContactCreation();
     returnToHomePage();
 
+  }
+
+  public void modifyContact(int index, ContactData contact) {
+    selectContact(index);
+    initContactModification();
+    fillContactForm(contact, false);
+    submitContactModification();
+    returnToHomePage();
   }
 
   public boolean isThereAContact() {
