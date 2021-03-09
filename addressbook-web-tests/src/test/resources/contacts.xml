@@ -5,6 +5,7 @@
     <address>address 0</address>
     <phone>2128506-0</phone>
     <email>mail0@mail.com</email>
+    <group>test0</group>
   </contact>
   <contact>
     <firstname>firstname 1</firstname>
@@ -12,6 +13,7 @@
     <address>address 1</address>
     <phone>2128506-1</phone>
     <email>mail1@mail.com</email>
+    <group>test1</group>
   </contact>
   <contact>
     <firstname>firstname 2</firstname>
@@ -19,5 +21,6 @@
     <address>address 2</address>
     <phone>2128506-2</phone>
     <email>mail2@mail.com</email>
+    <group>test2</group>
   </contact>
 </list>

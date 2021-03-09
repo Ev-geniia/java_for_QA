@@ -6,7 +6,6 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import task_12.model.ContactData;
 import task_12.model.Contacts;
-import task_12.model.GroupData;
 
 import java.io.BufferedReader;
 import java.io.File;
