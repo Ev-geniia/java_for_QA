@@ -1,26 +1,23 @@
 <list>
-  <task__12.model.ContactData>
-    <id>2147483647</id>
+  <contact>
     <firstname>firstname 0</firstname>
     <lastname>lastname 0</lastname>
-    <address>Address 0</address>
+    <address>address 0</address>
     <phone>2128506-0</phone>
     <email>mail0@mail.com</email>
-  </task__12.model.ContactData>
-  <task__12.model.ContactData>
-    <id>2147483647</id>
+  </contact>
+  <contact>
     <firstname>firstname 1</firstname>
     <lastname>lastname 1</lastname>
-    <address>Address 1</address>
+    <address>address 1</address>
     <phone>2128506-1</phone>
     <email>mail1@mail.com</email>
-  </task__12.model.ContactData>
-  <task__12.model.ContactData>
-    <id>2147483647</id>
+  </contact>
+  <contact>
     <firstname>firstname 2</firstname>
     <lastname>lastname 2</lastname>
-    <address>Address 2</address>
+    <address>address 2</address>
     <phone>2128506-2</phone>
     <email>mail2@mail.com</email>
-  </task__12.model.ContactData>
+  </contact>
 </list>
