@@ -9,7 +9,8 @@ import task_14.appmanager.ApplicationManager;
 public class TestBase {
   WebDriver wd;
 
-  protected static final ApplicationManager app = new ApplicationManager(BrowserType.FIREFOX);
+  protected static final ApplicationManager app
+          = new ApplicationManager(System.getProperty("browser", BrowserType.FIREFOX));
 
   @BeforeSuite (alwaysRun = true)
   public void setUp() throws Exception {
