@@ -32,7 +32,7 @@ public class ContactDataGenerator_ {
       jCommander.usage();
       return;
     }
-      generator.run();
+    generator.run();
 
   }
 
@@ -71,8 +71,8 @@ public class ContactDataGenerator_ {
     List<ContactData> contacts = new ArrayList<ContactData>();
     for (int i = 0; i < count; i++) {
       contacts.add(new ContactData().withFirstname(String.format("firstname %s", i))
-      .withLastname(String.format("lastname %s", i)).withAddress(String.format("address %s", i))
-      .withPhone(String.format("2128506-%s", i)).withEmail(String.format("mail%s@mail.com", i))
+              .withLastname(String.format("lastname %s", i)).withAddress(String.format("address %s", i))
+              .withPhone(String.format("2128506-%s", i)).withEmail(String.format("mail%s@mail.com", i))
               .withGroup(String.format("test%s", i)));
     }
     return contacts;
