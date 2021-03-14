@@ -29,6 +29,8 @@ public class ContactHelper extends BaseHelper {
     click(By.name("submit"));
   }
 
+
+
   public void fillContactForm(ContactData contactData, boolean creation) {
     type(By.name("firstname"),contactData.getFirstname());
     type(By.name("lastname"),contactData.getLastname());
