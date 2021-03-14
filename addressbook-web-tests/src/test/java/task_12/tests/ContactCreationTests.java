@@ -50,7 +50,7 @@ public class ContactCreationTests extends TestBase {
   public void testContactCreationWithPhoto() throws Exception {
     Contacts before = app.contact().all();
     File photo = new File("src/test/resources/stru.jpg");
-    ContactData contact = new ContactData().withFirstname("firstname").withLastname("lastname")
+    ContactData contact = new ContactData().withFirstname("firstnamePH").withLastname("lastnamePH")
             .withAddress("address").withPhone("2128506").withEmail("mail@mail.com").withGroup("test1").withPhoto(photo);
     app.contact().create(contact);
     Contacts after = app.contact().all();
