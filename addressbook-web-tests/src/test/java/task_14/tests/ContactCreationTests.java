@@ -82,4 +82,5 @@ public class ContactCreationTests extends TestBase {
     assertThat(after, equalTo(before));
   }
 
+
 }

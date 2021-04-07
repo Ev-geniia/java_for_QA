@@ -15,7 +15,7 @@ public class NavigationHelper extends BaseHelper {
             && isElementPresent(By.name("new"))) {
       return;
     }
-      click(By.linkText("groups"));
+    click(By.linkText("groups"));
   }
 
 

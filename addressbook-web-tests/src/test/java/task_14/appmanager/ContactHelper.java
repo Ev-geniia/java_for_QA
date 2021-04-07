@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import task_14.model.ContactData;
 import task_14.model.Contacts;
+import task_14.model.GroupData;
 
 import java.util.List;
 
