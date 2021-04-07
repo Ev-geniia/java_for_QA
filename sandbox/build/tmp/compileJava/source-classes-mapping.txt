@@ -10,5 +10,11 @@ drafts/CopyTask2.java
  drafts.CopyTask2
 lesson1/task2/Point.java
  lesson1.task2.Point
+ru/stqa/pft/sandbox/Equation.java
+ ru.stqa.pft.sandbox.Equation
+ru/stqa/pft/sandbox/Equality.java
+ ru.stqa.pft.sandbox.Equality
+ru/stqa/pft/sandbox/Primes.java
+ ru.stqa.pft.sandbox.Primes
 lesson1/task2/Task2.java
  lesson1.task2.Task2
