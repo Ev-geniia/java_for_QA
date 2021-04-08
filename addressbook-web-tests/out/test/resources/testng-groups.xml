@@ -3,9 +3,7 @@
 <suite name="Suite1" verbose="1" >
     <test name="Groups" >
         <classes>
-            <class name="task_14.tests.GroupCreationTests" />
             <class name="task_14.tests.GroupModificationTests" />
-            <class name="task_14.tests.GroupDeletionTests" />
         </classes>
     </test>
 </suite>
