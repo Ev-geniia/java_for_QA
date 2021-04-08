@@ -1,10 +1,8 @@
 package task_14.appmanager;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import java.io.File;
 
 public class BaseHelper {
@@ -52,5 +50,8 @@ public class BaseHelper {
       return false;
     }
 
+  }
+  public void waitForMessage() {
+    WebElement wait = new WebDriverWait(wd, 5).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div[class='msgbox']")));
   }
 }

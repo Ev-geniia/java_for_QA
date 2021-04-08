@@ -41,7 +41,11 @@ public class ContactHelper extends BaseHelper {
     attach(By.name ("photo"), contactData.getPhoto());
 
     if(creation) {
-      new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
+      if (contactData.getGroups().size() > 0) {
+        Assert.assertTrue(contactData.getGroups().size() == 1);
+        new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData
+                .getGroups().iterator().next().getName());
+      }
     } else {
       Assert.assertFalse(isElementPresent(By.name("new_group")));
     }
@@ -156,5 +160,35 @@ public class ContactHelper extends BaseHelper {
 
   private void initContactModificationById(int id) {
     wd.findElement(By.cssSelector(String.format("a[href='edit.php?id=%s']", id))).click();
+  }
+
+  public void addToGroup(ContactData contact, GroupData group) {
+    contactCache = null;
+    selectContactHomePageById(contact.getId());
+    selectGroupInList(group.getId());
+    initAddToGroup();
+  }
+
+  public void removeFromGroup(ContactData contact, GroupData group) {
+    contactCache = null;
+    selectContactHomePageById(contact.getId());
+    initDeleteFromGroup();
+    waitForMessage();
+  }
+
+  public void selectGroupInList(int groupId) {
+    new Select(wd.findElement(By.name("to_group"))).selectByValue(String.valueOf(groupId));
+  }
+
+  public void groupPage(int groupId) {
+    new Select(wd.findElement(By.name("group"))).selectByValue(String.valueOf(groupId));
+  }
+
+  public void initAddToGroup() {
+    wd.findElement(By.name("add")).click();
+  }
+
+  public void initDeleteFromGroup() {
+    wd.findElement(By.name("remove")).click();
   }
 }
